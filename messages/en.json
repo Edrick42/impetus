@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "siteName": "Instituto Impetus",
+    "defaultTitle": "Instituto Impetus — Impact, education and entrepreneurship",
+    "defaultDescription": "An organization committed to social impact, education and entrepreneurship. Official sponsor of the Favela + Rica event."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "events": "Events",
+    "blog": "Blog",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "languages": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "hero": {
+    "eyebrow": "Instituto Impetus",
+    "title": "We power stories that transform.",
+    "subtitle": "An organization committed to social impact, education and entrepreneurship — connecting people, purpose and real opportunities.",
+    "ctaPrimary": "Discover Favela + Rica",
+    "ctaSecondary": "About the Institute"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Who we are.",
+    "lead": "We believe talent exists everywhere — what's missing is opportunity. Instituto Impetus exists to close that gap.",
+    "pillars": {
+      "mission": {
+        "title": "Mission",
+        "body": "Drive social impact through education, entrepreneurship and initiatives that connect talent and opportunity."
+      },
+      "vision": {
+        "title": "Vision",
+        "body": "To become a reference in social projects that transform realities from within the communities themselves."
+      },
+      "values": {
+        "title": "Values",
+        "body": "Purpose, dignity, accountability and collective building — in everything we do."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects and initiatives",
+    "title": "What we make happen.",
+    "lead": "Initiatives that connect entrepreneurs, leaders and investors around a common purpose.",
+    "items": {
+      "favelaRica": {
+        "title": "Favela + Rica",
+        "tag": "Official sponsor",
+        "body": "An event bringing together favela entrepreneurs, investors and leaders for two days of networking, pitches and high-level content."
+      },
+      "educacao": {
+        "title": "Education that frees",
+        "tag": "Education",
+        "body": "A front dedicated to training, courses and mentorship to accelerate trajectories grounded in practical knowledge."
+      },
+      "empreender": {
+        "title": "Entrepreneurship with purpose",
+        "tag": "Entrepreneurship",
+        "body": "Support for impact entrepreneurs through guidance, connections and visibility to grow sustainably."
+      }
+    },
+    "cta": "See all projects"
+  },
+  "events": {
+    "eyebrow": "Featured event",
+    "title": "Favela + Rica 2026.",
+    "date": "June 26 and 27, 2026",
+    "location": "Rio de Janeiro",
+    "body": "Two intense days of networking, pitches and high-level content — connecting favela entrepreneurs to real growth opportunities.",
+    "cta": "Event details"
+  },
+  "galleryPreview": {
+    "eyebrow": "Gallery",
+    "title": "Event images.",
+    "lead": "Browse, download and share the best moments from Favela + Rica.",
+    "cta": "Open full gallery",
+    "empty": "Gallery available starting June 22 — during and after the event."
+  },
+  "instagram": {
+    "eyebrow": "@institutoimpetus",
+    "title": "Follow on Instagram.",
+    "lead": "Posts, behind-the-scenes and real-time stories.",
+    "cta": "Follow on Instagram",
+    "fallback": "More coming soon."
+  },
+  "blogPreview": {
+    "eyebrow": "Blog",
+    "title": "Latest stories.",
+    "lead": "Reflections, lessons and behind-the-scenes from those building impact.",
+    "cta": "See all posts",
+    "readMore": "Read more",
+    "readingTime": "{minutes} min read"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk.",
+    "lead": "Partnerships, institutional support or press — get in touch.",
+    "emailLabel": "Email",
+    "social": "Social media"
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Content on social impact, education and entrepreneurship.",
+    "empty": "No posts published yet.",
+    "back": "← Back to blog",
+    "by": "By",
+    "publishedOn": "Published on",
+    "readingTime": "{minutes} min read"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "lead": "Official event photos. Download and share.",
+    "albums": "Albums",
+    "photos": "{count} photos",
+    "empty": "No albums available at the moment.",
+    "back": "← Back to gallery",
+    "download": "Download photo",
+    "share": "Share",
+    "shareCopied": "Link copied",
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close"
+  },
+  "footer": {
+    "tagline": "Impact, education and entrepreneurship.",
+    "rights": "© {year} Instituto Impetus. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "languageSwitcher": "Language"
+  }
+}
