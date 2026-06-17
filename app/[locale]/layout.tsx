@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Fraunces } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import { Header } from '@/components/layout/Header';
@@ -65,11 +65,12 @@ export default async function LocaleLayout({
 
   const locale = rawLocale as Locale;
   setRequestLocale(locale);
+  const messages = await getMessages();
 
   return (
     <html lang={locale} className={`${inter.variable} ${fraunces.variable}`}>
       <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <JsonLd data={[organizationLd(), websiteLd(locale)]} />
           <a
             href="#main"
