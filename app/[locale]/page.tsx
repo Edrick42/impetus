@@ -1,15 +1,12 @@
 import { setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@/i18n/routing';
 import { Hero } from '@/components/home/Hero';
-import { About } from '@/components/home/About';
+import { AboutSummary } from '@/components/home/AboutSummary';
+import { ManifestoQuote } from '@/components/home/ManifestoQuote';
 import { Projects } from '@/components/home/Projects';
-import { Events } from '@/components/home/Events';
-import { GalleryPreview } from '@/components/home/GalleryPreview';
-import { InstagramFeed } from '@/components/home/InstagramFeed';
-import { BlogPreview } from '@/components/home/BlogPreview';
-import { Contact } from '@/components/home/Contact';
-import { JsonLd } from '@/components/seo/JsonLd';
-import { eventLd } from '@/lib/seo';
+import { EventSpotlight } from '@/components/home/EventSpotlight';
+import { Impact } from '@/components/home/Impact';
+import { ClosingCta } from '@/components/home/ClosingCta';
 
 export default async function HomePage({
   params,
@@ -22,15 +19,13 @@ export default async function HomePage({
 
   return (
     <>
-      <JsonLd data={eventLd(locale)} />
       <Hero />
-      <About />
-      <Projects />
-      <Events />
-      <GalleryPreview />
-      <InstagramFeed />
-      <BlogPreview locale={locale} />
-      <Contact />
+      <AboutSummary />
+      <ManifestoQuote />
+      <Projects withCta />
+      <EventSpotlight />
+      <Impact />
+      <ClosingCta />
     </>
   );
 }

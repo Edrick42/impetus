@@ -18,10 +18,10 @@ export function Hero() {
             {t('subtitle')}
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <ButtonLink href="/#eventos" variant="primary">
+            <ButtonLink href="/eventos" variant="primary">
               {t('ctaPrimary')}
             </ButtonLink>
-            <ButtonLink href="/#sobre" variant="ghost">
+            <ButtonLink href="/sobre" variant="ghost">
               {t('ctaSecondary')}
             </ButtonLink>
           </div>

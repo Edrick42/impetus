@@ -20,60 +20,279 @@
   },
   "hero": {
     "eyebrow": "Instituto Impetus",
-    "title": "Impulsamos historias que transforman.",
-    "subtitle": "Una organización comprometida con el impacto social, la educación y el emprendimiento — conectando personas, propósito y oportunidades reales.",
+    "title": "La educación transforma vidas.",
+    "subtitle": "Una vida que cambia, cambia otras. Apoyamos a quien ya camina — en el momento en que falta el apoyo correcto para llegar a donde ya es capaz de llegar.",
     "ctaPrimary": "Conoce Favela + Rica",
     "ctaSecondary": "Sobre el Instituto"
   },
+  "home": {
+    "aboutEyebrow": "El Instituto",
+    "aboutTitle": "Apoyo que se convierte en llegada.",
+    "aboutBody": "Cuando alguien aprende, algo cambia para siempre. Instituto Impetus existe para el instante en que la fuerza propia ya no basta — para que cada persona logre lo que ya es capaz de alcanzar. No vemos carencia: vemos potencial.",
+    "aboutCta": "Conoce el Instituto",
+    "quoteEyebrow": "Manifiesto",
+    "quoteLine": "No vemos carencia. Vemos potencial.",
+    "quoteAuthor": "Manifiesto Instituto Impetus",
+    "projectsEyebrow": "Frentes activos",
+    "projectsCta": "Conoce todos los proyectos",
+    "eventEyebrow": "Próximo evento",
+    "eventTagline": "Educación y Emprendimiento en las Comunidades",
+    "eventDateLabel": "Fecha",
+    "eventVenueLabel": "Lugar",
+    "eventHighlightsTitle": "Qué esperar",
+    "eventHighlights": [
+      { "number": "6.000", "label": "participantes" },
+      { "number": "12.000", "label": "obras en la librería" },
+      { "number": "R$ 970 mil", "label": "destinados en beneficios" }
+    ],
+    "eventCtaPrimary": "Asegurar mi lugar",
+    "eventCtaSecondary": "Ver detalles del evento",
+    "impactEyebrow": "Resultado en números",
+    "impactTitle": "Vidas que avanzaron.",
+    "impactLead": "La capacidad ya existe. El Instituto remueve lo que le impide realizarse.",
+    "impactItems": [
+      { "number": "+30", "label": "años de historia" },
+      { "number": "+11", "label": "nombrados por el Poder Judicial" },
+      { "number": "1ª", "label": "quilombola promotora de Brasil" },
+      { "number": "3", "label": "frentes activos" }
+    ],
+    "ctaEyebrow": "Hablemos",
+    "ctaTitle": "El resultado comienza por el apoyo correcto.",
+    "ctaLead": "Empresas, fundaciones y personas físicas — habla con nosotros sobre cómo contribuir, proponer alianzas o conocer mejor los proyectos.",
+    "ctaButton": "Hablar con el Instituto"
+  },
   "about": {
-    "eyebrow": "Quiénes somos",
-    "title": "Quiénes somos.",
-    "lead": "Creemos que el talento existe en todas partes — lo que falta es oportunidad. El Instituto Impetus existe para acortar esa distancia.",
-    "pillars": {
-      "mission": {
-        "title": "Misión",
-        "body": "Promover impacto social a través de educación, emprendimiento e iniciativas que conectan talento y oportunidad."
-      },
-      "vision": {
-        "title": "Visión",
-        "body": "Ser referencia en proyectos sociales que transforman realidades desde las propias comunidades."
-      },
-      "values": {
-        "title": "Valores",
-        "body": "Propósito, dignidad, responsabilidad y construcción colectiva — en todo lo que hacemos."
-      }
+    "eyebrow": "Sobre el Instituto",
+    "title": "El apoyo que hace la diferencia — en el instante en que la diferencia aún puede ser hecha.",
+    "lead": "Instituto Impetus existe porque la educación transforma vidas. Apoyamos a quien ya camina, en el momento en que avanzar se convierte en un desafío.",
+    "manifesto": {
+      "eyebrow": "Manifiesto",
+      "lines": [
+        "Hay gente que ya camina. Que ya estudió, ya intentó, ya demostró de lo que es capaz.",
+        "Y aun así, en algún punto, necesita una mano. No porque flaqueó — sino porque algunos caminos son más difíciles para unos que para otros.",
+        "No vemos carencia. Vemos potencial.",
+        "Creemos en lo que aún vas a lograr. Y estamos aquí para eso."
+      ]
+    },
+    "purpose": {
+      "title": "Propósito",
+      "body": "Cuando alguien aprende, algo cambia de forma permanente — en la persona, en la familia, en las generaciones que vienen después. Existimos para el momento en que la fuerza propia ya no basta. A través de la educación, contribuimos para que las personas logren lo que ya son capaces de alcanzar."
+    },
+    "vision": {
+      "title": "Visión",
+      "body": "Un Brasil donde la educación cumpla su promesa — la de abrir posibilidades reales para cada persona. Donde quien ya camina no tenga que parar por falta de apoyo. Donde la transformación que comienza en un individuo atraviesa familias, comunidades y generaciones."
+    },
+    "values": {
+      "eyebrow": "Valores",
+      "title": "Cinco principios que orientan todo.",
+      "items": [
+        {
+          "title": "Integralidad",
+          "body": "Vemos a la persona entera. Antes de ofrecer una solución, observamos lo que de hecho impide el avance — porque el obstáculo raramente es el obvio."
+        },
+        {
+          "title": "Acción concreta",
+          "body": "El resultado es lo que importa. La palabra inspira, la comunicación da transparencia — pero lo que cuenta es quién llegó."
+        },
+        {
+          "title": "Escucha antes de la solución",
+          "body": "No llegamos con respuestas listas. Escuchamos lo que cada persona, cada iniciativa, cada situación realmente necesita — antes de proponer cualquier cosa."
+        },
+        {
+          "title": "Coraje de proponer lo necesario",
+          "body": "Ímpetu está en el nombre. Hacer lo que necesita ser hecho, incluso cuando no es el camino más fácil ni el más obvio, es parte de quienes somos."
+        },
+        {
+          "title": "Amor como fundamento",
+          "body": "Actuamos desde el cuidado genuino por las personas — no como estrategia, como esencia. Sin eso, nada funciona."
+        }
+      ]
+    },
+    "differentiation": {
+      "eyebrow": "Cómo actuamos",
+      "title": "Partimos de la persona, no del servicio.",
+      "body": "Mientras la mayoría de las organizaciones parte de un servicio y busca un público, nosotros partimos de la persona y encontramos lo que necesita. El apoyo no tiene forma fija: vemos al ser humano entero, actuamos sobre lo que realmente está en el camino y, a través de la educación, transformamos vidas."
     }
   },
   "projects": {
-    "eyebrow": "Proyectos e iniciativas",
-    "title": "Lo que hacemos suceder.",
-    "lead": "Iniciativas que conectan emprendedores, líderes e inversores en torno a un propósito común.",
+    "eyebrow": "Nuestros proyectos",
+    "title": "Donde la educación transforma vidas.",
+    "lead": "Diferentes puntos de entrada, el mismo principio: mirar al ser humano entero y actuar sobre lo que realmente está en el camino.",
     "items": {
+      "magistraturaNegra": {
+        "title": "Magistratura Negra",
+        "tag": "Equidad y Justicia",
+        "body": "Apoyo integral a candidatos negros al Poder Judicial en la recta final del concurso. Ya son más de once nombrados — incluida la primera quilombola promotora de Brasil."
+      },
       "favelaRica": {
         "title": "Favela + Rica",
-        "tag": "Patrocinio oficial",
-        "body": "Evento que reúne a emprendedores de favelas, inversores y líderes en dos días de networking, pitches y contenido de alto nivel."
+        "tag": "Educación y Emprendimiento",
+        "body": "Evento de gran escala que conecta a emprendedores de comunidades con recursos, mercado y oportunidades. Dos días intensos en Rio de Janeiro dedicados a educación y emprendimiento."
       },
-      "educacao": {
-        "title": "Educación que libera",
-        "tag": "Educación",
-        "body": "Frente dedicado a formación, cursos y mentoría para acelerar trayectorias con base en conocimiento práctico."
-      },
-      "empreender": {
-        "title": "Emprender con propósito",
-        "tag": "Emprendimiento",
-        "body": "Apoyo a emprendedores de impacto con orientación, conexiones y visibilidad para crecer de forma sostenible."
+      "aprenderComImpetus": {
+        "title": "Aprender com Impetus",
+        "tag": "Educación Infantil",
+        "body": "Proyecto pionero que apoya a niños de la red pública con dificultades de aprendizaje — acompañamiento psicológico, fonoaudiológico y el espacio que necesitan para aprender."
       }
     },
-    "cta": "Ver todos los proyectos"
+    "cta": "Conoce todos los proyectos"
   },
   "events": {
     "eyebrow": "Evento destacado",
     "title": "Favela + Rica 2026.",
+    "tagline": "Educación y Emprendimiento en las Comunidades",
     "date": "26 y 27 de junio · 2026",
     "location": "Rio de Janeiro",
-    "body": "Dos días intensos de networking, pitches y contenido de alto nivel — conectando emprendedores de favelas a oportunidades reales de crecimiento.",
-    "cta": "Detalles del evento"
+    "venueName": "ExpoRio – SulAmérica",
+    "body": "Evento de dos días y gran escala dedicado a la educación, generación de ingresos y emprendimiento en comunidades del Estado de Rio de Janeiro.",
+    "ctaRegister": "Asegurar mi lugar",
+    "ctaLinks": "Acceder a todos los enlaces",
+    "video": {
+      "title": "Mira la invitación",
+      "fallback": "Tu navegador no soporta video HTML5."
+    },
+    "about": {
+      "title": "Sobre el evento",
+      "paragraphs": [
+        "FAVELA + RICA es un evento de dos días y gran escala dedicado a la educación, la generación de ingresos y el emprendimiento en comunidades del Estado de Rio de Janeiro.",
+        "Más que un evento, es una experiencia práctica de desarrollo — conectando conocimiento, mentoría y oportunidades reales para quienes quieran transformar vidas a través de la educación y para quienes deseen iniciar o ampliar un negocio.",
+        "En ambos días habrá conferencias de alto nivel y presentación de casos exitosos. El Día 1 también incluye propuestas de candidatos presidenciales sobre educación. Habrá stands, talleres, acciones contra la violencia hacia la mujer y, el sábado, exámenes de salud y oftalmológicos gratuitos."
+      ]
+    },
+    "days": {
+      "title": "Dos días, dos ejes",
+      "day1": {
+        "label": "Día 1",
+        "date": "26 de junio · 2026",
+        "schedule": "15h a 21h",
+        "theme": "F+R Educación",
+        "lead": "Conferencias y proyectos de educación que ya funcionaron, más propuestas de candidatos presidenciales sobre el tema — sin debate, solo escucha de las propuestas.",
+        "audienceTitle": "Público objetivo",
+        "audience": [
+          "Secretarios de educación",
+          "Directores y gestores de escuelas públicas y privadas",
+          "Profesores en general"
+        ],
+        "deliversTitle": "Cada participante recibe",
+        "delivers": [
+          "Acceso a conferencias, librería y exposiciones",
+          "Dinero para adquisición de libros de libre elección",
+          "Certificación",
+          "Inscripción gratuita y opcional en A+E2+F+"
+        ],
+        "highlightTitle": "Sorteo especial",
+        "highlight": "2 Centros de Tecnología, IA y Robótica para escuelas públicas — R$ 150.000 cada uno, incluyendo la capacitación de los profesores."
+      },
+      "day2": {
+        "label": "Día 2",
+        "date": "27 de junio · 2026",
+        "schedule": "9h a 18h",
+        "theme": "F+R Emprendimiento",
+        "lead": "Conferencias de alto impacto e historias reales de quienes ya lo lograron — inspiración y conocimiento práctico.",
+        "audienceTitle": "Público objetivo",
+        "audience": [
+          "Emprendedores residentes en favelas",
+          "Personas que tienen o desean tener su propio negocio"
+        ],
+        "deliversTitle": "Cada participante recibe",
+        "delivers": [
+          "Acceso a conferencias, librería y exposiciones",
+          "Dinero para adquisición de libros de libre elección",
+          "Acceso a cursos completos online post-evento, con beca integral",
+          "Certificación",
+          "Inscripción gratuita y opcional en A+E2+F+"
+        ],
+        "highlightsTitle": "Sorteos especiales",
+        "highlights": [
+          {
+            "title": "20 kits-capital",
+            "body": "R$ 100.000 distribuidos: 12 kits de R$ 3K, 5 de R$ 5K, 1 de R$ 9K, 1 de R$ 10K y 1 de R$ 20K."
+          },
+          {
+            "title": "Reforma de casa en la favela",
+            "body": "Sorteo por valor de R$ 30.000."
+          },
+          {
+            "title": "Post-evento completo",
+            "body": "Becas integrales en cursos, consultoría, networking y atención pro-bono con abogado, mentor o empresario."
+          }
+        ]
+      }
+    },
+    "benefits": {
+      "title": "Beneficios financieros",
+      "lead": "Los beneficios funcionan como estímulo y continuidad. El núcleo del proyecto es la generación de conocimiento, red de apoyo y transformación social.",
+      "items": [
+        {
+          "title": "Librería",
+          "amount": "R$ 540.000",
+          "body": "Distribuidos entre 6.000 participantes para adquisición de libros de libre elección."
+        },
+        {
+          "title": "Centros de Tecnología",
+          "amount": "R$ 300.000",
+          "body": "Sorteo de 2 Centros de Tecnología, IA y Robótica para escuelas públicas."
+        },
+        {
+          "title": "Kits-capital",
+          "amount": "R$ 100.000",
+          "body": "Distribuidos entre 20 emprendedores — desde R$ 3K hasta R$ 20K cada uno."
+        },
+        {
+          "title": "Reforma residencial",
+          "amount": "R$ 30.000",
+          "body": "Sorteo de una reforma de casa en la favela."
+        }
+      ]
+    },
+    "bookstore": {
+      "title": "Librería",
+      "body": "Más de 12.000 obras sobre educación, emprendimiento, clásicos y libros infantiles. Cada participante recibe un sobre con dinero para comprar libros de su libre elección."
+    },
+    "association": {
+      "label": "A+E2+F+",
+      "title": "Asociación de Educadores y Emprendedores de Favela",
+      "body": "Será lanzada en el evento. Existe para generar continuidad, comunidad y networking entre profesores y emprendedores. Inscripción gratuita y opcional para todos los participantes."
+    },
+    "actions": {
+      "title": "Acciones sociales",
+      "lead": "Tres ejes de alto retorno social, con stands y atención gratuita durante el evento.",
+      "axes": [
+        {
+          "label": "Eje 1",
+          "title": "Favela + Salud",
+          "body": "En alianza con REDE TOTAL CARE: chequeo rápido — presión arterial, glucemia, IMC y oximetría. En alianza con IBAP y CLINOP: exámenes oftalmológicos gratuitos — glaucoma, fondo de ojo y agudeza visual."
+        },
+        {
+          "label": "Eje 2",
+          "title": "Derechos de la Mujer",
+          "body": "En alianza con la Prefectura de Rio / Secretaría Municipal de la Mujer: equipo técnico (psicóloga y trabajadora social), talleres y materiales del Projeto Tem Saída."
+        },
+        {
+          "label": "Eje 3",
+          "title": "Internacionalización e Integración Cultural",
+          "body": "Participación de 2 conferencistas de Angola, aportando una perspectiva internacional."
+        }
+      ]
+    },
+    "venue": {
+      "title": "Lugar del evento",
+      "name": "ExpoRio – SulAmérica",
+      "city": "Rio de Janeiro · RJ"
+    },
+    "realization": {
+      "title": "Realización",
+      "items": ["Instituto Impetus", "Instituto Coalizão Rio"]
+    },
+    "coordination": {
+      "title": "Coordinación",
+      "items": ["William Douglas", "Anderson Cavalcante"]
+    },
+    "gallery": {
+      "title": "Arte del evento",
+      "lead": "Materiales oficiales de divulgación de la primera edición de Favela + Rica.",
+      "imageAlt": "Arte promocional de Favela + Rica"
+    }
   },
   "galleryPreview": {
     "eyebrow": "Galería",
@@ -102,6 +321,8 @@
     "title": "Hablemos.",
     "lead": "Alianzas, apoyo institucional o prensa — escríbenos.",
     "emailLabel": "Correo",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
     "social": "Redes sociales"
   },
   "blog": {

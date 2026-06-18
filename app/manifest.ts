@@ -8,10 +8,10 @@ export default function manifest(): MetadataRoute.Manifest {
       'Organização comprometida com impacto social, educação e empreendedorismo.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#fafaf8',
-    theme_color: '#114b5f',
+    background_color: '#F3FBFF',
+    theme_color: '#08B0EF',
     icons: [
-      { src: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { src: '/icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
     ],
   };
 }

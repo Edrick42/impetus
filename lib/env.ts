@@ -8,7 +8,6 @@ const envSchema = z.object({
   IG_ACCESS_TOKEN: z.string().optional(),
   IG_USER_ID: z.string().optional(),
   NEXT_PUBLIC_CLARITY_PROJECT_ID: z.string().optional(),
-  NEXT_PUBLIC_CONTACT_EMAIL: z.string().email().default('contato@institutoimpetus.org'),
 });
 
 const parsed = envSchema.safeParse({
@@ -19,7 +18,6 @@ const parsed = envSchema.safeParse({
   IG_ACCESS_TOKEN: process.env.IG_ACCESS_TOKEN,
   IG_USER_ID: process.env.IG_USER_ID,
   NEXT_PUBLIC_CLARITY_PROJECT_ID: process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID,
-  NEXT_PUBLIC_CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
 });
 
 if (!parsed.success) {
@@ -30,7 +28,6 @@ export const env = parsed.success
   ? parsed.data
   : {
       NEXT_PUBLIC_SITE_URL: 'http://localhost:3000',
-      NEXT_PUBLIC_CONTACT_EMAIL: 'contato@institutoimpetus.org',
     };
 
 export const hasPiwigo = Boolean(

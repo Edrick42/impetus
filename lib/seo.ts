@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { env } from './env';
+import { CONTACT } from './contact';
 import { routing, type Locale } from '@/i18n/routing';
 
 type BuildMetadataInput = {
@@ -96,12 +97,20 @@ export function organizationLd() {
     '@type': 'Organization',
     name: 'Instituto Impetus',
     url: absoluteUrl('/'),
-    logo: absoluteUrl('/logo.png'),
+    logo: absoluteUrl('/logo-horizontal.svg'),
     description:
       'Organização comprometida com impacto social, educação e empreendedorismo.',
-    sameAs: [
-      'https://www.instagram.com/institutoimpetus',
-    ],
+    email: CONTACT.email,
+    telephone: CONTACT.phone.tel,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: CONTACT.address.street,
+      addressLocality: CONTACT.address.city,
+      addressRegion: CONTACT.address.region,
+      postalCode: CONTACT.address.postalCode,
+      addressCountry: CONTACT.address.country,
+    },
+    sameAs: [CONTACT.social.instagram],
   };
 }
 
@@ -112,44 +121,72 @@ export function websiteLd(locale: Locale) {
     name: 'Instituto Impetus',
     url: absoluteUrl(`/${locale}`),
     inLanguage: locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${absoluteUrl(`/${locale}/blog`)}?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
 export function eventLd(locale: Locale) {
+  const venue = {
+    '@type': 'Place',
+    name: 'ExpoRio – SulAmérica',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Rio de Janeiro',
+      addressRegion: 'RJ',
+      addressCountry: 'BR',
+    },
+  };
+
+  const organizer = [
+    { '@type': 'Organization', name: 'Instituto Impetus', url: absoluteUrl(`/${locale}`) },
+    { '@type': 'Organization', name: 'Instituto Coalizão Rio' },
+  ];
+
+  const offers = {
+    '@type': 'Offer',
+    url: 'https://linktr.ee/favelamaisrica',
+    availability: 'https://schema.org/InStock',
+    price: '0',
+    priceCurrency: 'BRL',
+  };
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Event',
     name: 'Favela + Rica 2026',
-    startDate: '2026-06-26',
-    endDate: '2026-06-27',
+    startDate: '2026-06-26T15:00:00-03:00',
+    endDate: '2026-06-27T18:00:00-03:00',
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    location: {
-      '@type': 'Place',
-      name: 'Rio de Janeiro',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Rio de Janeiro',
-        addressRegion: 'RJ',
-        addressCountry: 'BR',
-      },
-    },
+    location: venue,
     description:
-      'Evento que reúne empreendedores de favelas, investidores e lideranças em dois dias de networking, pitches e conteúdo de alto nível.',
-    sponsor: {
-      '@type': 'Organization',
-      name: 'Instituto Impetus',
-      url: absoluteUrl(`/${locale}`),
-    },
-    organizer: {
-      '@type': 'Organization',
-      name: 'Favela + Rica',
-    },
+      'Evento de dois dias e grande escala voltado à educação, geração de renda e empreendedorismo em comunidades do Estado do Rio de Janeiro.',
+    image: absoluteUrl('/events/favela-rica/photo-01.jpg'),
+    organizer,
+    offers,
+    subEvent: [
+      {
+        '@type': 'Event',
+        name: 'Favela + Rica — Dia 1 · Educação',
+        startDate: '2026-06-26T15:00:00-03:00',
+        endDate: '2026-06-26T21:00:00-03:00',
+        location: venue,
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        description:
+          'Palestras e projetos em Educação que deram certo, com propostas de presidenciáveis sobre o tema.',
+      },
+      {
+        '@type': 'Event',
+        name: 'Favela + Rica — Dia 2 · Empreendedorismo',
+        startDate: '2026-06-27T09:00:00-03:00',
+        endDate: '2026-06-27T18:00:00-03:00',
+        location: venue,
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        description:
+          'Palestras de alto impacto e histórias reais sobre empreendedorismo nas comunidades.',
+      },
+    ],
   };
 }
 
@@ -173,7 +210,7 @@ export function blogPostingLd(post: {
     publisher: {
       '@type': 'Organization',
       name: 'Instituto Impetus',
-      logo: { '@type': 'ImageObject', url: absoluteUrl('/logo.png') },
+      logo: { '@type': 'ImageObject', url: absoluteUrl('/logo-horizontal.svg') },
     },
     image: post.cover ? absoluteUrl(post.cover) : absoluteUrl(defaultOg),
     mainEntityOfPage: absoluteUrl(`/${post.locale}/blog/${post.slug}`),

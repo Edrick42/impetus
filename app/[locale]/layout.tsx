@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Fraunces } from 'next/font/google';
+import { Spline_Sans, Sarabun } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -11,15 +11,17 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { buildMetadata, organizationLd, websiteLd } from '@/lib/seo';
 import '../globals.css';
 
-const inter = Inter({
+const splineSans = Spline_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-spline-sans',
   display: 'swap',
 });
 
-const fraunces = Fraunces({
+const sarabun = Sarabun({
   subsets: ['latin'],
-  variable: '--font-fraunces',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-sarabun',
   display: 'swap',
 });
 
@@ -46,7 +48,11 @@ export async function generateMetadata({
       path: '/',
     }),
     title: { default: t('defaultTitle'), template: `%s | ${t('siteName')}` },
-    icons: { icon: '/favicon.ico' },
+    icons: {
+      icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+      shortcut: '/icon.svg',
+      apple: '/icon.svg',
+    },
   };
 }
 
@@ -68,7 +74,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang={locale} className={`${splineSans.variable} ${sarabun.variable}`}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <JsonLd data={[organizationLd(), websiteLd(locale)]} />

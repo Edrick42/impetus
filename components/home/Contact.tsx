@@ -2,11 +2,11 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { Eyebrow, Heading, Lead } from '@/components/ui/Heading';
-import { env } from '@/lib/env';
+import { CONTACT, formatAddressLines } from '@/lib/contact';
 
 export function Contact() {
   const t = useTranslations('contact');
-  const email = env.NEXT_PUBLIC_CONTACT_EMAIL;
+  const addressLines = formatAddressLines();
 
   return (
     <Section id="contato" tone="surface">
@@ -26,11 +26,36 @@ export function Contact() {
                 {t('emailLabel')}
               </p>
               <a
-                href={`mailto:${email}`}
+                href={`mailto:${CONTACT.email}`}
                 className="mt-2 inline-block font-display text-2xl font-medium tracking-tight text-fg hover:text-brand"
               >
-                {email}
+                {CONTACT.email}
               </a>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.16em] text-muted">
+                {t('phoneLabel')}
+              </p>
+              <a
+                href={`tel:${CONTACT.phone.tel}`}
+                className="mt-2 inline-block font-display text-2xl font-medium tracking-tight text-fg hover:text-brand"
+              >
+                {CONTACT.phone.display}
+              </a>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.16em] text-muted">
+                {t('addressLabel')}
+              </p>
+              <address className="mt-2 not-italic text-base leading-relaxed text-fg">
+                {addressLines.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </address>
             </div>
 
             <div>
@@ -39,7 +64,7 @@ export function Contact() {
               </p>
               <div className="mt-3 flex gap-4 text-sm">
                 <a
-                  href="https://instagram.com/institutoimpetus"
+                  href={CONTACT.social.instagram}
                   className="text-fg hover:text-brand"
                   target="_blank"
                   rel="noopener noreferrer"

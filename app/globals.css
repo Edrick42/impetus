@@ -11,18 +11,24 @@
    ============================================================ */
 
 :root {
-  /* COR — regra 60-30-10 */
-  --color-bg: #fafaf8;            /* 60% fundo dominante */
-  --color-fg: #0f0f0f;            /* texto principal */
-  --color-surface: #edeae1;       /* 30% superfícies (cards, seções) */
-  --color-muted: #6b6b6b;         /* texto secundário */
-  --color-brand: #114b5f;         /* 10% accent (CTAs, links) */
-  --color-brand-fg: #ffffff;
-  --color-border: rgba(0, 0, 0, 0.08);
+  /* COR — Paleta institucional Impetus */
+  --color-bg: #F3FBFF;            /* 60% fundo dominante — off-white azulado */
+  --color-fg: #051628;            /* texto principal — navy profundo */
+  --color-surface: #E4F2FB;       /* 30% superfícies (cards, seções) */
+  --color-muted: #4A6378;         /* texto secundário — navy dessaturado */
+  --color-brand: #08B0EF;         /* 10% accent (CTAs, links) — azul vivo */
+  --color-brand-fg: #FFFFFF;
+  --color-border: rgba(5, 22, 40, 0.12);
+
+  /* ACENTOS — para uso pontual em badges, ilustrações, status */
+  --color-accent-navy: #024C7B;
+  --color-accent-yellow: #FEBE04;
+  --color-accent-green: #00B94E;
+  --color-accent-orange: #FD5904;
 
   /* TIPOGRAFIA */
-  --font-display: var(--font-fraunces), Georgia, 'Times New Roman', serif;
-  --font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-spline-sans), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-sarabun), system-ui, -apple-system, sans-serif;
 
   /* ESCALA TIPOGRÁFICA */
   --text-xs: 0.75rem;
@@ -62,7 +68,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.05;
 }

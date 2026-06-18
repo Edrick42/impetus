@@ -8,23 +8,26 @@ export function Header() {
   const meta = useTranslations('metadata');
 
   const links = [
-    { href: '/#sobre', label: t('about') },
-    { href: '/#projetos', label: t('projects') },
-    { href: '/#eventos', label: t('events') },
-    { href: '/blog', label: t('blog') },
+    { href: '/', label: t('home') },
+    { href: '/sobre', label: t('about') },
+    { href: '/projetos', label: t('projects') },
+    { href: '/eventos', label: t('events') },
     { href: '/galeria', label: t('gallery') },
-    { href: '/#contato', label: t('contact') },
+    { href: '/contato', label: t('contact') },
   ] as const;
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-bg/90 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between gap-6">
-        <Link
-          href="/"
-          className="font-display text-lg font-medium tracking-tight"
-          aria-label={meta('siteName')}
-        >
-          {meta('siteName')}
+      <Container className="flex h-20 items-center justify-between gap-6 md:h-24">
+        <Link href="/" aria-label={meta('siteName')} className="block shrink-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/icon.svg"
+            alt={meta('siteName')}
+            className="h-14 w-14 md:h-16 md:w-16"
+            width={64}
+            height={64}
+          />
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">

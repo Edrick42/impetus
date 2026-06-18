@@ -18,6 +18,12 @@ const config: Config = {
           DEFAULT: 'var(--color-brand)',
           fg: 'var(--color-brand-fg)',
         },
+        accent: {
+          navy: 'var(--color-accent-navy)',
+          yellow: 'var(--color-accent-yellow)',
+          green: 'var(--color-accent-green)',
+          orange: 'var(--color-accent-orange)',
+        },
         border: 'var(--color-border)',
       },
       fontFamily: {

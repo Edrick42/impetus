@@ -2,10 +2,13 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { Eyebrow, Heading, Lead } from '@/components/ui/Heading';
+import { ButtonLink } from '@/components/ui/Button';
 
-const ITEMS = ['favelaRica', 'educacao', 'empreender'] as const;
+const ITEMS = ['magistraturaNegra', 'favelaRica', 'aprenderComImpetus'] as const;
 
-export function Projects() {
+type ProjectsProps = { withCta?: boolean };
+
+export function Projects({ withCta = false }: ProjectsProps = {}) {
   const t = useTranslations('projects');
 
   return (
@@ -35,6 +38,14 @@ export function Projects() {
             </article>
           ))}
         </div>
+
+        {withCta && (
+          <div className="mt-12 flex justify-center">
+            <ButtonLink href="/projetos" variant="ghost">
+              {t('cta')}
+            </ButtonLink>
+          </div>
+        )}
       </Container>
     </Section>
   );
