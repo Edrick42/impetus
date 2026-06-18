@@ -136,7 +136,10 @@
         "body": "Pioneer project supporting public-school children with learning difficulties — psychological and speech therapy support, plus the space they need to learn."
       }
     },
-    "cta": "Discover all projects"
+    "cta": "Discover all projects",
+    "detailsCta": "View project details",
+    "comingSoon": "Page coming soon",
+    "favelaRicaCta": "View event details"
   },
   "magistraturaNegra": {
     "eyebrow": "Project",

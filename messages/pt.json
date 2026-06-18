@@ -136,7 +136,10 @@
         "body": "Projeto pioneiro que apoia crianças da rede pública com dificuldades de aprendizagem — acompanhamento psicológico, fonoaudiológico e o espaço de que precisam para aprender."
       }
     },
-    "cta": "Conheça todos os projetos"
+    "cta": "Conheça todos os projetos",
+    "detailsCta": "Ver detalhes do projeto",
+    "comingSoon": "Página em breve",
+    "favelaRicaCta": "Ver detalhes do evento"
   },
   "magistraturaNegra": {
     "eyebrow": "Projeto",
