@@ -122,7 +122,8 @@
       "magistraturaNegra": {
         "title": "Magistratura Negra",
         "tag": "Equidade e Justiça",
-        "body": "Suporte integral a candidatos negros ao Judiciário na reta final do concurso. Já são mais de onze nomeados — incluindo a primeira quilombola promotora do Brasil."
+        "body": "Apoio integral a candidatos negros à Magistratura e ao Ministério Público. 21 aprovados no total — 11 já chegaram ao destino final e 10 conquistaram concursos-escada de prestígio.",
+        "cta": "Conhecer o projeto"
       },
       "favelaRica": {
         "title": "Favela + Rica",
@@ -136,6 +137,58 @@
       }
     },
     "cta": "Conheça todos os projetos"
+  },
+  "magistraturaNegra": {
+    "eyebrow": "Projeto",
+    "title": "Magistratura Negra",
+    "lead": "Apoio integral a candidatos negros que chegaram à reta final do concurso para Magistratura e Ministério Público — para que cheguem onde já são capazes de chegar.",
+    "feature": {
+      "eyebrow": "Conquista que abre caminho",
+      "title": "A primeira mulher negra e quilombola promotora do Brasil.",
+      "name": "Drª Kalorine Bezerra Maia",
+      "handle": "@promotoraquilombola",
+      "body": "Aluna do projeto, é a primeira mulher negra e quilombola aprovada para o Ministério Público no país. Uma trajetória de capacidade reconhecida — e do tipo de apoio que faz a diferença no instante decisivo."
+    },
+    "screen1": {
+      "eyebrow": "Conquistas definitivas",
+      "title": "Para o Brasil, vitórias. Para eles, etapas.",
+      "body": "O objetivo do Projeto Magistratura Negra é preparar e apoiar candidatos para alcançar os cargos de Magistrado(a) e Membro(a) do Ministério Público. Ao longo dessa caminhada, muitos alunos conquistam aprovações em concursos altamente disputados — de excelente remuneração, prestígio e estabilidade. São cargos que, para a imensa maioria dos brasileiros, já representam uma grande vitória profissional e pessoal. Mas, para esses alunos, eles são apenas uma etapa da jornada."
+    },
+    "screen2": {
+      "eyebrow": "Aprovações que marcam a jornada",
+      "title": "10 aprovações em concursos-escada.",
+      "lead": "Após ingressarem no projeto, nossos alunos conquistaram aprovações em concursos que já permitem dizer que essas pessoas venceram na vida — mas permanecem porque o sonho continua sendo chegar ao destino final.",
+      "items": [
+        { "count": "8", "title": "Analista Judiciário", "detail": "TRF2, TRF3, TJMG e ES" },
+        { "count": "1", "title": "Auditor Fiscal", "detail": "Estado do Espírito Santo" },
+        { "count": "1", "title": "Agente de Polícia", "detail": "Distrito Federal" },
+        { "count": "1º lugar", "title": "STM", "detail": "Nomeação pelo STF" }
+      ],
+      "demographicsTitle": "Por trás dos números",
+      "demographics": [
+        { "value": "80%", "label": "mulheres" },
+        { "value": "20%", "label": "homens" }
+      ]
+    },
+    "results": {
+      "eyebrow": "Resultado em números",
+      "title": "21 aprovados. 11 já chegaram ao destino.",
+      "lead": "Para cada um, um caminho diferente. Para o Instituto, sempre o mesmo princípio: enxergar a pessoa inteira e agir sobre o que de fato está no caminho.",
+      "items": [
+        { "number": "21", "label": "aprovados pelo projeto" },
+        { "number": "11", "label": "na Magistratura e no Ministério Público" },
+        { "number": "10", "label": "em concursos-escada" },
+        { "number": "15", "label": "mulheres negras" },
+        { "number": "6", "label": "homens negros" }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Galeria",
+      "title": "Vitórias com nome e rosto.",
+      "lead": "Fotos do projeto e dos alunos que conquistaram suas aprovações.",
+      "imageAlt": "Foto do projeto Magistratura Negra"
+    },
+    "backCta": "Voltar para projetos"
   },
   "events": {
     "eyebrow": "Evento em destaque",

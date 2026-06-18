@@ -122,7 +122,8 @@
       "magistraturaNegra": {
         "title": "Magistratura Negra",
         "tag": "Equity and Justice",
-        "body": "Comprehensive support for Black candidates to the Judiciary in the final stretch of the exam. More than eleven appointees so far — including the first quilombola prosecutor in Brazil."
+        "body": "Comprehensive support for Black candidates to the Brazilian Judiciary and Public Prosecutor's Office. 21 approved students — 11 already at the final destination, 10 won prestigious stepping-stone exams.",
+        "cta": "About the project"
       },
       "favelaRica": {
         "title": "Favela + Rica",
@@ -136,6 +137,58 @@
       }
     },
     "cta": "Discover all projects"
+  },
+  "magistraturaNegra": {
+    "eyebrow": "Project",
+    "title": "Magistratura Negra",
+    "lead": "Comprehensive support for Black candidates who reached the final stretch of the exam for the Brazilian Judiciary and Public Prosecutor's Office — so they can reach where they're already capable of going.",
+    "feature": {
+      "eyebrow": "A path-opening victory",
+      "title": "The first Black quilombola prosecutor in Brazil.",
+      "name": "Dr. Kalorine Bezerra Maia",
+      "handle": "@promotoraquilombola",
+      "body": "A student of the project, she is the first Black quilombola woman approved for the Public Prosecutor's Office in the country. A trajectory of recognized capacity — and of the kind of support that makes the difference at the decisive moment."
+    },
+    "screen1": {
+      "eyebrow": "Definitive victories",
+      "title": "For Brazil, achievements. For them, steps.",
+      "body": "The goal of the Magistratura Negra Project is to prepare and support candidates to reach the positions of Judge and Public Prosecutor. Along the way, many students win approvals in highly competitive exams — with excellent pay, prestige and stability. These are positions that, for the vast majority of Brazilians, already represent a great professional and personal victory. But for these students, they are just one stage of the journey."
+    },
+    "screen2": {
+      "eyebrow": "Approvals that mark the journey",
+      "title": "10 approvals in stepping-stone exams.",
+      "lead": "After joining the project, our students won approvals in exams that already let us say these people have made it — but they stay because the dream is still to reach the final destination.",
+      "items": [
+        { "count": "8", "title": "Judicial Analyst", "detail": "TRF2, TRF3, TJMG and ES" },
+        { "count": "1", "title": "Tax Auditor", "detail": "State of Espírito Santo" },
+        { "count": "1", "title": "Police Agent", "detail": "Federal District" },
+        { "count": "1st place", "title": "STM", "detail": "Appointed by the STF" }
+      ],
+      "demographicsTitle": "Behind the numbers",
+      "demographics": [
+        { "value": "80%", "label": "women" },
+        { "value": "20%", "label": "men" }
+      ]
+    },
+    "results": {
+      "eyebrow": "Results in numbers",
+      "title": "21 approved. 11 already at the destination.",
+      "lead": "For each one, a different path. For the Institute, always the same principle: see the whole person and act on what is actually in the way.",
+      "items": [
+        { "number": "21", "label": "approved by the project" },
+        { "number": "11", "label": "in the Judiciary and Public Prosecutor's Office" },
+        { "number": "10", "label": "in stepping-stone exams" },
+        { "number": "15", "label": "Black women" },
+        { "number": "6", "label": "Black men" }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Gallery",
+      "title": "Victories with names and faces.",
+      "lead": "Photos from the project and the students who won their approvals.",
+      "imageAlt": "Magistratura Negra project photo"
+    },
+    "backCta": "Back to projects"
   },
   "events": {
     "eyebrow": "Featured event",
