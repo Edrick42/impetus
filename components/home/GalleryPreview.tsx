@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { Eyebrow, Heading, Lead } from '@/components/ui/Heading';
 import { ButtonLink } from '@/components/ui/Button';
-import { getAlbums, getAlbumPhotos } from '@/lib/piwigo';
+import { getAlbums, getAlbumPhotos } from '@/lib/gallery';
 
 export async function GalleryPreview() {
   const t = await getTranslations('galleryPreview');

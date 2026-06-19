@@ -180,16 +180,34 @@ Filtre as gravações no Clarity por esses eventos para entender o que funciona.
 
 ---
 
-## Galeria (Piwigo)
+## Galeria
 
-A galeria consome a [API REST do Piwigo](https://piwigo.org/doc/doku.php?id=dev:webapi:start) server-side, com cache de 5min.
+A galeria tem fluxo completo de fotógrafo com login, upload e publicação por
+admin. Stack: **Supabase** (auth + Postgres + RLS) + **Cloudflare R2** (storage,
+egress grátis) + **sharp** (gera thumb/medium/original no upload).
 
-Enquanto o Piwigo do cliente não está no ar, `lib/piwigo.ts` retorna 2 álbuns mock com 12 fotos do Pexels cada — desbloqueia desenvolvimento e dá ao cliente uma prévia visual da galeria.
+### Como ligar
 
-Quando o Piwigo estiver pronto:
-1. Setar `PIWIGO_API_URL`, `PIWIGO_USERNAME`, `PIWIGO_PASSWORD`
-2. O cliente real assume automaticamente (a função `hasPiwigo` em `lib/env.ts` detecta)
-3. O sitemap passa a refletir os álbuns reais
+1. **Supabase** — criar projeto, copiar URL + anon key + service role key, rodar a
+   migration em `supabase/migrations/0001_gallery.sql` (ver `supabase/README.md`)
+2. **Cloudflare R2** — criar bucket `impetus-gallery`, expor em domínio público
+   (recomendado: custom domain `fotos.institutoimpetus.com.br`) e gerar API token
+   com permissão de leitura+escrita
+3. Preencher `.env.local` com todas as vars `NEXT_PUBLIC_SUPABASE_*`,
+   `SUPABASE_SERVICE_ROLE_KEY`, `R2_*`
+4. Criar o **primeiro admin** direto no Supabase Studio (Auth → Add user →
+   editar `app_metadata` para `{"role": "admin"}`)
+5. Logar em `/entrar`, criar evento em `/admin/eventos`, criar fotógrafo em
+   `/admin/fotografos` (atribuindo ao evento), enviar credenciais ao fotógrafo
+6. Fotógrafo loga, sobe fotos em `/fotografo/[evento]`
+7. Admin volta em `/admin/eventos` e clica **Publicar** quando quiser liberar o
+   álbum para visitantes
+
+### Fallback
+
+Enquanto Supabase/R2 não estão configurados, `lib/gallery.ts` usa o cliente
+**Piwigo legado** (ou o mock de Pexels se Piwigo também não estiver setado).
+A troca é automática via `hasGallery`/`hasPiwigo` em `lib/env.ts`.
 
 ---
 
@@ -215,6 +233,10 @@ Quando o Piwigo estiver pronto:
 - **gray-matter** (frontmatter)
 - **zod** (env validation)
 - **clsx** + **tailwind-merge** (`cn` helper)
+- **@supabase/ssr** (auth + DB)
+- **@aws-sdk/client-s3** (Cloudflare R2 storage)
+- **sharp** (processamento de imagem no upload)
+- **react-dropzone** (upload drag-and-drop)
 
 ---
 

@@ -2,11 +2,11 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import type { PiwigoPhoto } from '@/lib/piwigo';
+import type { GalleryPhoto } from '@/lib/gallery';
 import { trackEvent } from '@/lib/clarity';
 
 type Props = {
-  photos: PiwigoPhoto[];
+  photos: GalleryPhoto[];
   albumName: string;
   startIndex: number;
   onClose: () => void;

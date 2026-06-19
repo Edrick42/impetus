@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import type { PiwigoPhoto } from '@/lib/piwigo';
+import type { GalleryPhoto } from '@/lib/gallery';
 import { Lightbox } from './Lightbox';
 
-export function PhotoGrid({ photos, albumName }: { photos: PiwigoPhoto[]; albumName: string }) {
+export function PhotoGrid({ photos, albumName }: { photos: GalleryPhoto[]; albumName: string }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (

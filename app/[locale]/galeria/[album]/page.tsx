@@ -5,7 +5,7 @@ import { Container } from '@/components/ui/Container';
 import { Link } from '@/i18n/routing';
 import { PhotoGrid } from '@/components/gallery/PhotoGrid';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { getAlbums, getAlbumBySlug, getAlbumPhotos } from '@/lib/piwigo';
+import { getAlbums, getAlbumBySlug, getAlbumPhotos } from '@/lib/gallery';
 import { buildMetadata, imageGalleryLd, breadcrumbLd } from '@/lib/seo';
 import type { Locale } from '@/i18n/routing';
 

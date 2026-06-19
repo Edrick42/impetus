@@ -93,27 +93,36 @@ Tudo concluído nesta entrega.
 
 ## Fase 3 — Infra externa ⏳
 
-### 3.1 Piwigo (galeria de fotos) — prazo 22/jun
+### 3.1 Galeria com upload de fotógrafos — Supabase + Cloudflare R2
 
-Responsabilidade do Instituto, conforme proposta.
+**Decisão de arquitetura (jun/2026):** abandonado Piwigo. Implementado fluxo
+nativo no Next.js usando stack 100% free-tier-amigável.
 
-- [ ] **Provisionar VPS** (sugestões: DigitalOcean droplet R$ 30/mês, Hostinger VPS, ou Locaweb)
-- [ ] **Instalar Piwigo** (instalação típica: ~15 min com Docker; ~30 min manual via cPanel)
-- [ ] **Configurar domínio/subdomínio** (sugestão: `fotos.institutoimpetus.org` ou `galeria.institutoimpetus.org`)
-- [ ] **Criar usuário de API** com permissão de leitura
-- [ ] **Habilitar CORS** para o domínio do site
-- [ ] **HTTPS via Let's Encrypt** (obrigatório — site é HTTPS)
-- [ ] **Treinar fotógrafo do evento** para subir álbuns/fotos
+**Status atual:** ✅ código pronto (rotas `/entrar`, `/admin/*`, `/fotografo/*`,
+APIs de upload, RLS, sharp pipeline). Falta apenas provisionar serviços e ligar
+as env vars.
 
-**O que nos passar quando estiver pronto:**
+**Setup (responsabilidade do Instituto / dev):**
 
-```
-PIWIGO_API_URL=https://fotos.institutoimpetus.org
-PIWIGO_USERNAME=api_reader
-PIWIGO_PASSWORD=<senha>
-```
+- [ ] Criar projeto **Supabase** (free) e rodar `supabase/migrations/0001_gallery.sql`
+- [ ] Criar bucket **Cloudflare R2** `impetus-gallery` + custom domain público
+- [ ] Setar env vars no Vercel: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`,
+      `SUPABASE_SERVICE_ROLE_KEY`, `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`,
+      `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_URL`
+- [ ] Criar primeiro **admin** no Supabase Studio (`app_metadata.role = "admin"`)
+- [ ] Pelo `/admin`: criar evento "Favela + Rica 2026" + criar conta dos
+      fotógrafos com senha temporária + atribuir aos eventos
+- [ ] Treinar fotógrafo: abrir `/entrar`, ir em "Meus eventos", arrastar fotos
+- [ ] Após o evento: admin marca evento como **publicado** → fica visível em `/galeria`
 
-**Se preferir alternativa:** Cloudinary (free tier generoso, CDN global, zero infra para manter) — exige refactor de ~3h no `lib/piwigo.ts`.
+**Custo estimado:** R$ 0 nos primeiros 1-2 anos (10GB R2 + 500MB Supabase
+cobrem 1-2 eventos); R$ 5-50/mês em operação madura.
+
+### 3.1.bis Piwigo (legado — fallback)
+
+Cliente Piwigo segue em `lib/piwigo.ts` como fallback automático caso Supabase
+ainda não esteja ligado. Pode ser removido depois que a galeria nova estiver
+em produção e validada.
 
 ### 3.2 Instagram Graph API — opcional, prazo flexível
 

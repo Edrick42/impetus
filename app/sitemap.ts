@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
-import { getAlbums } from '@/lib/piwigo';
+import { getAlbums } from '@/lib/gallery';
 import { absoluteUrl, buildAlternates } from '@/lib/seo';
 
 const STATIC_PATHS = [

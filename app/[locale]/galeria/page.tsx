@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Eyebrow, Heading, Lead } from '@/components/ui/Heading';
 import { AlbumGrid } from '@/components/gallery/AlbumGrid';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { getAlbums } from '@/lib/piwigo';
+import { getAlbums } from '@/lib/gallery';
 import { buildMetadata, breadcrumbLd } from '@/lib/seo';
 import type { Locale } from '@/i18n/routing';
 

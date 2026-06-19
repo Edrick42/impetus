@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import type { PiwigoAlbum } from '@/lib/piwigo';
+import type { GalleryAlbum } from '@/lib/gallery';
 
-export function AlbumGrid({ albums }: { albums: PiwigoAlbum[] }) {
+export function AlbumGrid({ albums }: { albums: GalleryAlbum[] }) {
   const t = useTranslations('gallery');
 
   return (
